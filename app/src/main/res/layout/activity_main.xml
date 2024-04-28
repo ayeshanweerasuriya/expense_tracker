@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        android:paddingBottom="200dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="167dp"
+            android:text="My Expense Tracker"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editDateText"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="Enter the Date (YYYY-MM-DD)"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/editCategoryText"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Enter the Category or Description"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editDateText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editDateText"
+            app:layout_constraintTop_toBottomOf="@+id/editDateText" />
+
+        <EditText
+            android:id="@+id/editAmountText"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Enter the Amount"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editCategoryText"
+            app:layout_constraintStart_toStartOf="@+id/editCategoryText"
+            app:layout_constraintTop_toBottomOf="@+id/editCategoryText" />
+
+        <EditText
+            android:id="@+id/editWeekNumberText"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Enter the Week number"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editAmountText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editAmountText"
+            app:layout_constraintTop_toBottomOf="@+id/editAmountText" />
+
+        <Button
+            android:id="@+id/insertBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1130DA"
+            android:text="INSERT DATA"
+            app:layout_constraintEnd_toEndOf="@+id/editWeekNumberText"
+            app:layout_constraintStart_toStartOf="@+id/editWeekNumberText"
+            app:layout_constraintTop_toBottomOf="@+id/editWeekNumberText" />
+
+        <Button
+            android:id="@+id/viewBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1130DA"
+            android:text="VIEW DATA"
+            app:layout_constraintEnd_toEndOf="@+id/insertBtn"
+            app:layout_constraintStart_toStartOf="@+id/insertBtn"
+            app:layout_constraintTop_toBottomOf="@+id/insertBtn" />
+
+        <EditText
+            android:id="@+id/editIdupdatenDelete"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="Enter ID to update and delete"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/viewBtn"
+            app:layout_constraintStart_toStartOf="@+id/viewBtn"
+            app:layout_constraintTop_toBottomOf="@+id/viewBtn" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1130DA"
+            android:text="UPDATE DATA"
+            app:layout_constraintEnd_toEndOf="@+id/editIdupdatenDelete"
+            app:layout_constraintStart_toStartOf="@+id/editIdupdatenDelete"
+            app:layout_constraintTop_toBottomOf="@+id/editIdupdatenDelete" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1130DA"
+            android:text="DELETE DATA"
+            app:layout_constraintEnd_toEndOf="@+id/updateBtn"
+            app:layout_constraintStart_toStartOf="@+id/updateBtn"
+            app:layout_constraintTop_toBottomOf="@+id/updateBtn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
