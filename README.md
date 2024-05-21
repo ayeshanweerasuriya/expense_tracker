@@ -14,3 +14,8 @@ This is a simple Weather App built using **HTML**, **CSS**, and **JavaScript**. 
 - **CSS**
 - **JavaScript**
 - **Weather API** (e.g., OpenWeatherMap)
+
+## Preview
+
+![Weather App Screenshot 1](assets/preview/1.png)
+![Weather App Screenshot 2](assets/preview/2.png)
