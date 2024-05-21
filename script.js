@@ -10,6 +10,7 @@ const checkWeather = async (cityName) => {
 
     if (response.status == 404) {
       document.querySelector(".error").style.display = "block";
+      document.querySelector(".weather").style.display = "none";
       document.getElementById("city_input").value = "";
     } else {
       const data = await response.json();
